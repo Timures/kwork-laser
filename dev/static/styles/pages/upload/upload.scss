@@ -1,0 +1,62 @@
+.upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    @include montserrat-bold;
+    font-size: rem(36);
+    color: $black;
+    padding-top: rem(64.5);
+    padding-bottom: rem(51);
+  }
+  &__place {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #D0C8C2;
+    width: rem(1000);
+    height: rem(500);
+    margin-bottom: rem(104);
+  }
+
+  &-instrucion {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__text {
+      @include montserrat-regular;
+      color: $black;
+      font-size: rem(16);
+      padding-bottom: rem(61);
+    }
+  }
+}
+@media screen and (max-width: 1080px) {
+  .upload {
+    &__place {
+      width: 90%;
+      height: 350px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .upload {
+    &__title {
+      font-size: 21px;
+      padding-bottom: 10px;
+    }
+    &__place {
+      border: none;
+      width: auto;
+      height: auto;
+    }
+    &-instrucion {
+      &__text {
+        font-size: 16px;
+      }
+    }
+
+  }
+}

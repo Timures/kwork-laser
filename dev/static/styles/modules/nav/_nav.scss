@@ -1,0 +1,28 @@
+.nav {
+  
+  &-list {
+    display: flex;
+  }
+  &-item {
+    @include montserrat-medium;
+    font-size: rem(18);
+    padding-right: rem(46);
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  &-link {
+    color: $black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    &:hover, &:focus {
+      color: $orange;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}

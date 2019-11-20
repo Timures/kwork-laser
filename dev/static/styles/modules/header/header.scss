@@ -1,0 +1,49 @@
+// header style
+.header {
+  position: relative;
+  &__wrapper {
+    max-width: rem(1440);
+    width: 100%;
+    height: rem(48);
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: solid #D6CBC3 1px;
+    padding: 0 120px;
+  }
+  &-logo {
+    @include montserrat-bold;
+    font-size: rem(20);
+    color: $black;
+    white-space: nowrap;
+    &__link {
+      text-decoration: none;
+      &:focus, &:hover {
+        color: $orange;
+      }
+      &:visited {
+        color: $black;
+      }
+    }
+  }  
+}
+@media screen and (max-width: 1080px) {
+  .header {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      height: 70px;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &__wrapper {
+      justify-content: flex-start;
+      padding: 0 0 0 58px;
+    }
+  }
+}

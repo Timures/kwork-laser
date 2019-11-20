@@ -2,6 +2,7 @@
 @import "utils/vars";
 @import "utils/mixins";
 @import "utils/fonts";
+@import "utils/reset";
 
 html {
   font-size: $base-font-size;
@@ -94,3 +95,4 @@ button { outline: none; }
 
 //Модули
 @import "modules/modules";
+@import "pages/pages.scss";

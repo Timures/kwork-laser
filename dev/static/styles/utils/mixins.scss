@@ -1,7 +1,25 @@
+// px to rem
+@function rem($pixels, $context: $base-font-size) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
 @mixin size($a,$b: $a) {
   width: $a;
   height: $b;
 }
+
+// fonts 
+@mixin montserrat-regular {font-family: 'Montserrat-Regular';}
+@mixin montserrat-medium {font-family: 'Montserrat-Medium';}
+@mixin montserrat-bold {font-family: 'Montserrat-Bold';}
+@mixin montserrat-extrabold {font-family: 'Montserrat-ExtraBold';}
+
 
 @mixin placeholder {
   ::-webkit-input-placeholder {@content}

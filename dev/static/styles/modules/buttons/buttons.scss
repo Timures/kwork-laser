@@ -1,0 +1,15 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(244);
+  height: rem(63);
+  color: $white;
+  background-color: $orange;
+  border-radius: 31.5px;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+  &:focus, &:hover {
+    background-color: darken($orange, 10);
+  }
+}

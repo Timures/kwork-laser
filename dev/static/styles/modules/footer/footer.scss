@@ -1,1 +1,42 @@
-footer { flex: 0 0 auto; }
+// footer style
+.footer {
+  height: rem(58);
+  display: flex;
+  justify-content: center;
+  padding-bottom: rem(100);
+  &__wrapper {
+    max-width: rem(727);
+    display: flex;
+    flex-direction: column;
+  }
+  &-nav-list__top {
+    display: flex;
+    justify-content: center;
+    padding-bottom: rem(20);
+  }
+  &-nav-list__bottom {
+    display: flex;
+    justify-content: center;
+  }
+  &-nav-item {
+    @include montserrat-regular;
+    font-size: rem(18);
+    color: $black;
+    padding-right: rem(34);
+    white-space: nowrap;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    height: auto;
+    padding-bottom: rem(58);
+    &-nav-list__top, &-nav-list__bottom  {
+      display: block;
+      padding-bottom: 0;
+    }
+  }
+}
