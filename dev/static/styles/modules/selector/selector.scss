@@ -1,0 +1,118 @@
+.selectors {
+  
+  font-size: 16px;
+  line-height: 19.2px;
+  &-view {
+    display: flex;
+    justify-content: space-between;
+    @include montserrat-medium;
+    padding-top: 14.5px;
+    padding-bottom: 15.9px;
+  }
+  &-size {
+    &__desc {
+      @include montserrat-regular;
+      font-size: 14px;
+      line-height: 16.8px;
+      padding-left: 58px;
+      padding-top: 7px;
+    }
+  }
+
+  // price 
+  &-price {
+    display: flex;
+    
+    padding-bottom: 25.2px;
+    &__title {
+      @include montserrat-medium;
+      font-size: 16px;
+      line-height: 19.2px;
+    }
+    &__amount {
+      padding-left: 115.4px;
+    }
+  }
+
+  // quality
+  &-quality {
+    @extend .selectors-price;
+    align-items: end;
+    justify-content: space-between;
+    height: 36px;
+    &__title {
+      // padding-right: 24px;
+      @extend .selectors-price__title;
+    }
+    &__volume {
+      padding-top: 8px;
+    }
+  }
+
+  // brightness
+  &-brightness {
+    display: flex;
+    height: 48px;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 18.4px;
+    &__title {
+      @extend .selectors-price__title;
+    }
+    &__volume {
+      padding-top: 8px;
+    }
+  }
+  // alert 
+  &-alert {
+    width: 378px;
+    height: 106.36px;
+    padding: 21px;
+    border-radius: 10px;
+    background-color: $alert;
+    display: flex;
+    align-items: center;
+    margin-bottom: 22.6px;
+    margin-left: auto;
+    margin-right: auto;
+    &__icon {
+      padding-right: 18px;
+    }
+    &__text {
+      @include montserrat-regular;
+      font-size: 14px;
+      line-height: 20px;
+      color: $orange;
+      max-width: 300px;
+    }
+  }
+  // file 
+  &-file {
+    display: flex;
+    @include montserrat-regular;
+    font-size: 16px;
+    line-height: 19.2px;
+    padding-bottom: 12.6px;
+    &__title, &__text {
+      padding-right: 10px;
+    }
+  }
+  // other
+  &-other {
+    display: flex;
+    align-items: flex-start;
+    color: $orange;
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+    &__icon {
+      padding-right: 9.5px;
+    }
+    &__title {
+      @include montserrat-regular;
+      font-size: 16px;
+      color: $orange;
+      line-height: 30px;
+    }
+  }
+}

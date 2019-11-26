@@ -1,5 +1,38 @@
 $(document).ready(function () {
     svg4everybody({});
+    // -- quality
+    $('input[type=radio][name=quality]').on('change', function() {
+        switch ($(this).val()) {
+            case 'min':
+                //before clear class
+                $('.quality-label').removeClass('label-black');
+                $('.quality-label__desc').removeClass('span-visible');
+                // add class
+                $('.quality-label--min').addClass('label-black');
+                $('.quality-label__desc--min').addClass('span-visible');
+            break;
+            case 'mid':
+                //before clear class
+                $('.quality-label').removeClass('label-black');
+                $('.quality-label__desc').removeClass('span-visible');
+                // add class
+                $('.quality-label--min, .quality-label--mid').addClass('label-black');
+                $('.quality-label__desc--mid').addClass('span-visible');
+            break;
+            case 'max':
+                //before clear class
+                $('.quality-label').removeClass('label-black');
+                $('.quality-label__desc').removeClass('span-visible');
+                // add class
+                $('.quality-label').addClass('label-black');
+                $('.quality-label__desc--max').addClass('span-visible');
+            break;
+        }
+    });
+    // -- brightness
+    // - если засвечено то 
+    $('.brightness-progress__value').css('width', 210);
+    
 });
 
 

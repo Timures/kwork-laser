@@ -3,3 +3,9 @@
 @import "nav/nav";
 @import "mobile-nav/mobile-nav.scss";
 @import "footer/footer";
+// selectors
+@import "selector/selector.scss";
+@import "selector/size-selector";
+@import "selector/orientation-selector";
+@import "selector/quality";
+@import "selector/brightness";

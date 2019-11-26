@@ -1,0 +1,28 @@
+.quality-radio-group
+  input(type='radio'
+        id='quality-min'
+        name='quality'
+        class='quality-input'
+        value='min'          
+  )
+  label(for='quality-min' class='quality-label quality-label--min')
+    span.quality-label__desc.quality-label__desc--min минимум
+
+  input(type='radio'
+        id='quality-mid'
+        name='quality'
+        class='quality-input'
+        value='mid'
+        checked='checked'
+  )
+  label(for='quality-mid' class='quality-label quality-label--mid label-black')
+    span.quality-label__desc.quality-label__desc--mid.span-visible средне
+  
+  input(type='radio'
+        id='quality-max'
+        name='quality'
+        class='quality-input'
+        value='max'
+  )
+  label(for='quality-max' class='quality-label quality-label--max')
+    span.quality-label__desc.quality-label__desc--max максимум

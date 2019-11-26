@@ -1,0 +1,56 @@
+label.orientation-label {
+  color: $orange;
+  display: inline-block;
+  cursor: pointer;
+  // font-weight: bold;
+  // padding: 5px 20px;
+  width: 60px;
+  height: 48px;
+  padding-top:13.7px;
+  padding-left: 17px;
+  @include montserrat-medium;
+  font-size: 18px;
+  line-height: 21.6px;
+  text-transform: uppercase;
+  border-right: 1px solid $orange;
+  margin-left: -4px; // убираем отступы по количеству инпутов
+  background-repeat: no-repeat;
+  background-size: contain;
+  &--left {
+    padding-top: 12px;
+    padding-left: 19px;
+    width: 70px;
+    // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='23' viewBox='0 0 33 23'%3E%3Cg transform='translate(-4060 -512)'%3E%3Cg transform='translate(4060 512)' fill='none' stroke='%23fff' stroke-width='2'%3E%3Crect width='33' height='23' stroke='none'/%3E%3Crect x='1' y='1' width='31' height='21' fill='none'/%3E%3C/g%3E%3Cg transform='translate(4064 516)' fill='none' stroke='%23fff' stroke-width='1'%3E%3Crect width='25' height='15' stroke='none'/%3E%3Crect x='0.5' y='0.5' width='24' height='14' fill='none'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  &--right {
+    padding-top: 7px;
+    padding-left: 19px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    border-right: none;
+  }
+}
+
+input[type=radio]:checked + label.orientation-label{
+  color: $white;
+  background: $orange;
+  
+  span.orientation-icon--upright,span.orientation-icon--horizontally {
+    svg,g {
+      stroke: $white;
+    }
+  }
+}
+
+.orientation-radio-group {
+  border: solid $borderWidth $orange;
+  display: inline-block;
+  // margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+span.orientation-icon--horizontally {
+  svg,g {
+    stroke: $orange;
+  }
+}

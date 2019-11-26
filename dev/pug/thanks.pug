@@ -1,7 +1,12 @@
 extends template/main
 
 block variables
-	- var title = 'Thanks'
+  - var title = 'Thanks'
 
 block content
-	include pages/_step6
+  section.thanks
+  .thanks__title Спасибо за покупки на нашем сайте!
+  .thanks__content
+    .thanks__mark
+    .thanks__notice Ваш заказ отправлен на обработку
+    .thanks__desc Мы изготовим и отправим его в ближайшее время

@@ -1,0 +1,59 @@
+
+$borderWidth: 1px;
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label.quality-label {  
+  background-color: #DDDDDD;
+  display: inline-block;
+  cursor: pointer;
+  height: 5px;
+  &--min {
+    width: 87px;    
+    // margin-right: 3px;
+  }
+  &--mid {
+    width: 90px;    
+    // margin-right: 3.2px;
+  }
+  &--max {
+    width: 86.82px;
+  }
+  
+}
+.quality-label__desc {
+  @include montserrat-regular;
+  color: $black;
+  font-size: 14px;
+  line-height: 16.8px;
+  text-transform: lowercase;
+  visibility: hidden;
+}
+/*
+input[type=radio]:checked + label.quality-label {
+  // color: $white;
+  span.quality-label__desc {
+    visibility:visible;
+  }
+  background: $black;
+}
+*/
+.span-visible {
+  visibility:visible;
+}
+label.label-black {
+  background-color: $black;
+}
+
+.quality-radio-group {
+ 
+  display: inline-block;
+  border-radius: 2.5px;
+  overflow: hidden;
+  // width: 270px;
+  text-align: center;
+}

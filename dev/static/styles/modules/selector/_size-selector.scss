@@ -1,0 +1,46 @@
+
+$borderWidth: 1px;
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label.size-label {
+  color: $orange;
+  display: inline-block;
+  cursor: pointer;
+  // font-weight: bold;
+  // padding: 5px 20px;
+  width: 56px;
+  height: 48px;
+  padding-top:13.7px;
+  padding-left: 17px;
+  @include montserrat-medium;
+  font-size: 18px;
+  line-height: 21.6px;
+  text-transform: uppercase;
+  border-right: 1px solid $orange;
+  margin-left: -4px; // убираем отступы по количеству инпутов
+  &--last {
+    border-right: none; // убираем двойной бордер
+  }
+}
+
+input[type=radio]:checked + label.size-label{
+  color: $white;
+  background: $orange;
+}
+/*
+label.size-label + input[type=radio] + label.size-label {
+  border-left: solid 1px $fg;
+}
+*/
+.size-radio-group {
+  border: solid $borderWidth $orange;
+  display: inline-block;
+  // margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}

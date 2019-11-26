@@ -1,0 +1,39 @@
+.options {
+  @extend .upload;
+  padding-bottom: rem(101);
+  &__title {
+      @extend .upload__title;
+      padding-bottom: 7px;
+  }
+  &__desc {
+    @include montserrat-regular;
+    font-size: rem(21);
+    color: $black;
+    line-height: 1;
+    padding-bottom: rem(53);
+  }
+  &-form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: rem(30);
+    &__selectors {
+      width: rem(449);
+      height: rem(510);
+      background-color: $white;
+      border-radius: 5px;
+      margin-right: 15px;
+      padding: rem(33) rem(26);
+    }
+    &__image {
+      width: rem(735);
+      height: rem(510);
+      border-radius: 5px;
+    }
+  }
+  &__btn {
+    @extend .btn;
+    width: rem(356);
+    height: rem(63);
+  }
+  
+}
