@@ -54,6 +54,13 @@ span.orientation-icon--horizontally {
     stroke: $orange;
   }
 }
+.orientation {
+  &-desc {
+    &--horizontally, &--upright {
+      display: none;
+    }
+  }
+}
 
 // media 
 @media screen and (max-width: 480px) {
@@ -86,6 +93,7 @@ span.orientation-icon--horizontally {
         font-size: 13px;
         line-height: 15.6px;
         text-transform: capitalize;
+        display: inline;
       }
     }
   }

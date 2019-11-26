@@ -53,9 +53,17 @@
 }
 @media screen and (max-width: 940px) {
   .options {
-    &-form {
+    &__content {
       flex-direction: column-reverse;
       align-items: center;
+    }
+    &-form {
+      
+      align-items: center;
+      &__selectors {
+        margin-right: 0;
+        width: 100%;
+      }
       &__image {
         width: 500px;
         height: auto;
