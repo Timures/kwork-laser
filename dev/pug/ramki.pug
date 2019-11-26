@@ -1,0 +1,17 @@
+extends template/main
+
+block variables
+  - var title = 'Ramki'
+
+block content
+  section.ramki
+    .ramki__title Оформление заказа
+    .ramki__desc Выберите рамку
+    .ramki__content
+      .ramki-form
+        include modules/frame/frame
+      .ramki-image
+        img(class='options__image' src='static/images/general/ramki.png')
+
+    .ramki__btn.btn--disabled Перейти к оформлению заказа
+    .ramki__instruction Осталось выбрать рамку

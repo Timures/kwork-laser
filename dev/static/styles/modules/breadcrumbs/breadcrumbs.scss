@@ -1,0 +1,20 @@
+.breadcrumbs {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    height: 19px;
+  }
+  &__icon {
+    padding-right: 7px;
+    svg {
+      vertical-align: baseline;
+    }
+  }
+  &__text {
+    @include montserrat-bold;
+    font-size: 16px;
+    line-height: 19.2px;
+    color: $orange;
+    text-transform: capitalize;
+  }
+}

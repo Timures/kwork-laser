@@ -4,31 +4,23 @@ block variables
   - var title = 'Главная страница'
 
 block content
-  .quality-radio-group
-  input(type='radio'
-        id='quality-min'
-        name='quality'
-        class='quality-input'
-        value='min'          
-  )
-  label(for='quality-min' class='quality-label quality-label--min')
-    span.quality-label__desc.quality-label__desc--min минимум
+  .frame-radio-group
+    input(type='radio'
+          id='ramka_1'
+          name='frame__input'
+          class='frame__inputs'
+          value='1'
+          checked
+    )
+    label(for='ramka_1' class='frame__label')
+      img(src='static/images/general/ramki/ramka_1.png' alt='ramka 1' class='frame__img')
 
-  input(type='radio'
-        id='quality-mid'
-        name='quality'
-        class='quality-input'
-        value='mid'
-        checked='checked'
-  )
-  label(for='quality-mid' class='quality-label quality-label--mid label-black')
-    span.quality-label__desc.quality-label__desc--mid.span-visible средне
-  
-  input(type='radio'
-        id='quality-max'
-        name='quality'
-        class='quality-input'
-        value='max'
-  )
-  label(for='quality-max' class='quality-label quality-label--max')
-    span.quality-label__desc.quality-label__desc--max максимум
+    input(type='radio'
+          id='ramka_2'
+          name='frame__input'
+          class='frame__inputs'
+          value='2'
+    )
+    label(for='ramka_2' class='frame__label')
+      img(src='static/images/general/ramki/ramka_2.png' alt='ramka 2' class='frame__img')
+    

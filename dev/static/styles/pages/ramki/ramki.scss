@@ -1,0 +1,64 @@
+.ramki {
+  &__title { @extend .options__title; }
+  &__desc { 
+    @extend .options__desc;
+    text-align: center;
+  }
+  &__content { 
+    @extend .options__content;
+    justify-content: center;
+  }
+  &-form {
+    width: 449px;
+    margin-right: 15px;
+    background-color: $white;
+    border-radius: 5px;
+    padding:26.5px 47px 94px 39px;
+  }
+  &__btn {
+    @extend .btn;
+    margin: auto;
+    width: 356px;
+  }
+  &__instruction {
+    @include montserrat-regular;
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 20.1px;
+    padding-bottom: rem(62);
+    margin: auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .ramki {
+    &-form {
+      width: 500px;
+      margin-right: 0;
+      padding: 20px 10px;
+    }
+    &-image {
+      width: 500px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .ramki {
+    &__desc {
+      padding-bottom: 45.2px;
+    }
+    &-image {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .ramki {
+    &-form {
+      width: 100%;
+      margin-right: 0;
+      padding: 10px;
+    }
+    
+  }
+}

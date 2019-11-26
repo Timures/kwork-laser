@@ -43,7 +43,7 @@ input[type=radio]:checked + label.orientation-label{
 }
 
 .orientation-radio-group {
-  border: solid $borderWidth $orange;
+  border: solid 1px $orange;
   display: inline-block;
   // margin: 20px;
   border-radius: 5px;

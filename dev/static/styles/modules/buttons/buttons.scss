@@ -13,4 +13,7 @@
   &:focus, &:hover {
     background-color: darken($orange, 10);
   }
+  &--disabled {
+    background-color: $disabled;
+  }
 }
