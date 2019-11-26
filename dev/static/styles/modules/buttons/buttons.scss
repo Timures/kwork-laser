@@ -4,6 +4,7 @@
   align-items: center;
   width: rem(244);
   height: rem(63);
+  @include montserrat-regular;
   color: $white;
   background-color: $orange;
   border-radius: 31.5px;

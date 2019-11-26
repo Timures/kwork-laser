@@ -4,11 +4,14 @@ block variables
   - var title = 'Options'
 
 block content
-  section.options
+  section.thanks
     .options__title Оформление заказа
     .options__desc Выберите размер картины и нужную область
-    form.options-form
+    .options__content
+      form.options-form
       include modules/selector/selector
       .options-form__image
         img(class='options__image' src='static/images/general/image.png')
+
     .options__btn Сохранить и продолжить
+    

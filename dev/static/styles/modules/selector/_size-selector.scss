@@ -44,3 +44,16 @@ label.size-label + input[type=radio] + label.size-label {
   border-radius: 5px;
   overflow: hidden;
 }
+
+@media screen and (max-width: 480px) {
+  .size-radio-group {
+    display: flex;
+  }
+  label.size-label {
+    width: 84px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}

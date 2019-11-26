@@ -54,3 +54,39 @@ span.orientation-icon--horizontally {
     stroke: $orange;
   }
 }
+
+// media 
+@media screen and (max-width: 480px) {
+  label.orientation-label {
+    &--left, &--right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding:0;
+      width: 100%;
+    }
+  }
+  .orientation {
+    &-radio-group { 
+      display: flex;
+    }
+    &-icon {
+      &--horizontally, &--upright {
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+        padding-right: 19px;
+      }
+    }
+    
+    &-desc {
+      &--horizontally, &--upright {
+        padding-left: 11px;
+        @include montserrat-medium;
+        font-size: 13px;
+        line-height: 15.6px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@
   padding-bottom: rem(101);
   &__title {
       @extend .upload__title;
+      padding-top: 31.5px;
       padding-bottom: 7px;
   }
   &__desc {
@@ -11,6 +12,10 @@
     color: $black;
     line-height: 1;
     padding-bottom: rem(53);
+  }
+  &__content {
+    display: flex;
+    margin-bottom: 30px;
   }
   &-form {
     display: flex;
@@ -36,4 +41,56 @@
     height: rem(63);
   }
   
+}
+@media screen and (max-width: 1180px) {
+  .options {
+    &-form {
+      &__image {
+        width: 500px;
+      }
+    } 
+  }
+}
+@media screen and (max-width: 940px) {
+  .options {
+    &-form {
+      flex-direction: column-reverse;
+      align-items: center;
+      &__image {
+        width: 500px;
+        height: auto;
+      }
+    } 
+  }  
+}
+@media screen and (max-width: 480px) {
+  .options {
+    &__desc {
+      font-size: 16px;
+      text-align: center;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    &-form {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding-bottom: 0;
+      &__selectors {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: 10px;
+      }
+      &__image {
+        width: 100%;
+        height: auto;
+      }
+    } 
+    &__btn {
+      width: 316px;
+      margin-bottom: 62px;
+    }
+  }  
 }

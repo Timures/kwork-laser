@@ -31,11 +31,13 @@
 }
 @media screen and (max-width: 480px) {
   .thanks {
+    padding-bottom: 0;
     &__title {
       max-width: 240px;
       text-align: center;
       padding-top: 31.5px;
       padding-bottom: 61.5px;
+      margin: auto;
     }
     &__notice {
       font-size: 18px;
@@ -45,6 +47,7 @@
     }
     &__desc {
       font-size: 18px;
+      margin-bottom: 62px;
     }
   }
 }
