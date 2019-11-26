@@ -13,12 +13,24 @@
     margin-right: 15px;
     background-color: $white;
     border-radius: 5px;
-    padding:26.5px 47px 94px 39px;
+    padding:26.5px 47px 20px 39px;
+  }
+  &-price {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 51.8px;
+    &__title, &__value {
+      @extend .selectors-price__title;
+    }
+    &--disabled {
+      display: none;
+    }
   }
   &__btn {
     @extend .btn;
     margin: auto;
     width: 356px;
+    margin-bottom: rem(62);
   }
   &__instruction {
     @include montserrat-regular;
@@ -29,7 +41,9 @@
     margin: auto;
     text-align: center;
   }
+
 }
+
 @media screen and (max-width: 1180px) {
   .ramki {
     &-form {

@@ -1,0 +1,161 @@
+.delivery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-head {
+    text-align: center;
+  }
+  &__title {
+    @extend .options__title;    
+  }
+  &__desc {
+    @extend .options__desc;
+  }
+
+  &-content {
+    width: 700px;
+    height: auto;
+    padding-top: rem(30.5);
+    padding-left: rem(37);
+    background-color: $white;
+    margin-bottom: 22.5px;
+    
+    &__title {
+      @include montserrat-medium;
+      font-size: 21px;
+      line-height: 25.2px;
+      padding-top: 51px;
+      padding-bottom: 35.5px;
+      text-align: center;
+    }
+    &__img {
+      width: 473px;
+      height: 323px;
+      margin: auto;
+    }  
+  }
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 463px;
+    margin-top: 33px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18.7px;
+    &__format {
+      display: flex;
+      justify-content: center;
+      @extend .selectors-price__title;
+    }
+    &__down, &__up {
+      cursor: pointer;
+    }
+    &__amount {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__volume {
+      @include montserrat-medium;
+      font-size: 18px;
+      line-height: 21.6px;
+      padding-left: 16px;
+      padding-right: 12px;
+    }
+  }
+
+  &-calculation {
+    display: flex;
+    flex-direction: column;
+    max-width: 465px;
+    margin: auto;
+    @extend .selectors-price__title;
+    &__picture, &__frame, &__delivery {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__all {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__name {
+      padding-bottom: 13px;
+    }
+    &__summ--all {
+      padding-left: 51px;
+    }
+  }
+
+  &-offerta {
+    display: flex;
+    margin-bottom: 22.5px;
+    &__content {
+      @extend .selectors-price__title;
+      max-width: 573px;
+    }
+  }
+
+  &__btn {
+    @extend .btn;
+    margin: auto;
+  }
+
+  &-instruction {
+    
+    @include montserrat-medium;
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 20.1px;
+    padding-bottom: rem(62);
+    margin:auto;
+    &__text {
+      color: $orange;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .delivery {
+    &-content {
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      &__img {
+        width: 295px;
+        height: 215px;
+      }      
+    }
+    &-info {
+      flex-direction: column;
+      padding-left: 42.9px;
+      align-items: flex-start;
+      &__format {
+        padding-bottom: 15px;
+        font-size: 16px;
+      }
+      &__name {
+        padding-right: 8px;
+      }
+    }
+
+    &-calculation {
+      font-size: 16px;
+    }
+
+    &-offerta {
+      &__content {
+        font-size: 13px;
+        line-height: 15.6px;
+      }
+    }
+
+    &-instruction {
+      width: 260px;
+      line-height: 24px;
+      text-align: center;
+    }
+
+  }
+}

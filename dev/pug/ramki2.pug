@@ -1,7 +1,7 @@
 extends template/main
 
 block variables
-  - var title = 'Ramki Выбор рамки'
+  - var title = 'Ramki Цены'
 
 block content
   section.ramki
@@ -10,11 +10,10 @@ block content
     .ramki__content
       .ramki-form
         include modules/frame/frame
-        .ramki-price.ramki-price--disabled
+        .ramki-price
           .ramki-price__title Стоимость рамки
           .ramki-price__value 10000 р.
       .ramki-image
         img(class='options__image' src='static/images/general/ramki.png')
 
-    .ramki__btn.btn--disabled Перейти к оформлению заказа
-    .ramki__instruction Осталось выбрать рамку
+    .ramki__btn.btn Перейти к оформлению заказа

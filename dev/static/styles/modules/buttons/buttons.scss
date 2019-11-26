@@ -17,3 +17,13 @@
     background-color: $disabled;
   }
 }
+
+a {
+  color: $links;
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $orange;
+  }
+}

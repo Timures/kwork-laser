@@ -1,0 +1,61 @@
+extends template/main
+
+block variables
+  - var title = 'delivery Выбор рамки'
+
+block content
+  section.delivery
+    .delivery-head
+      .delivery__title Оформление заказа
+      .delivery__desc Заполните информацию о доставке
+    .delivery-content
+      +breadcrumbs('К редактированию', '/')
+      .delivery-content__title Ваш заказ
+      .delivery-content__img
+        img(class='delivery__img' src='static/images/general/painting.png')
+      .delivery-info
+        .delivery-info__format
+          .delivery-info__name Формат:
+          .delivery-info__size Альбомная A4
+
+        .delivery-info__format
+          .delivery-info__name Рамка №:
+          .delivery-info__frame 6
+
+        .delivery-info__amount
+          .delivery-info__down
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g transform="translate(-10694 -974)"><rect width="12" height="2" transform="translate(10703 988)" fill="#f06f05"/><g transform="translate(10694 974)" fill="none" stroke="#f06f05" stroke-width="1"><circle cx="15" cy="15" r="15" stroke="none"/><circle cx="15" cy="15" r="14.5" fill="none"/></g></g></svg>
+          .delivery-info__volume 1
+          .delivery-info__up
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g transform="translate(-10759 -974)"><path d="M10773,995v-5h-5v-2h5v-5h2v5h5v2h-5v5Z" fill="#f06f05"/><g transform="translate(10759 974)" fill="none" stroke="#f06f05" stroke-width="1"><circle cx="15" cy="15" r="15" stroke="none"/><circle cx="15" cy="15" r="14.5" fill="none"/></g></g></svg>
+      
+      .delivery-form
+
+      .delivery-calculation
+        .delivery-calculation__picture
+          .delivery-calculation__name Картина
+          .delivery-calculation__summ--picture 1800 р.
+
+        .delivery-calculation__frame
+          .delivery-calculation__name Рамка
+          .delivery-calculation__summ--frame 1000 р.
+        
+        .delivery-calculation__delivery
+          .delivery-calculation__name Доставка
+          .delivery-calculation__summ--delivery 650 р.
+
+        .delivery-calculation__all
+          .delivery-calculation__name Итого:
+          .delivery-calculation__summ--all 3450 р.
+
+  .delivery-offerta
+    input(type='checkbox' class='offerta__checkbox')
+    .delivery-offerta__content
+      span.delivery-offerta__text Я прочитал
+      a(class='delivery-offerta__link', href='/')  пользовательское соглашение
+      span.delivery-offerta__text  и согласен с условиями безопасности и обработки персональных данных.
+
+  .delivery__btn.btn--disabled Оплатить
+  .delivery-instruction
+    span.delivery-instruction__name Осталось заполнить: 
+    span.delivery-instruction__text отчество, номер телефона, эл. почту, адрес доставки, индекс

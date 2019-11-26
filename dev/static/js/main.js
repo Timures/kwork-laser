@@ -35,6 +35,8 @@ $(document).ready(function () {
     // --- выбор рамки тут можно выводить цену
     $('input[type=radio][name=frame__input]').on('change', function() {
         // console.log('test');
+        var ramki_value = $(this).val();
+        $('.ramki-price__value').html(ramki_value + ' р.');
         // console.log($(this).val());
     });
 
