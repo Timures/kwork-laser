@@ -66,6 +66,10 @@
     }
   }
 
+  &-customer-data {
+    display: flex;
+    justify-content: center;
+  }
   &-calculation {
     display: flex;
     flex-direction: column;
@@ -90,6 +94,7 @@
 
   &-offerta {
     display: flex;
+    justify-content: center;
     margin-bottom: 22.5px;
     &__content {
       @extend .selectors-price__title;
@@ -103,12 +108,12 @@
   }
 
   &-instruction {
-    
+    text-align: center;
     @include montserrat-medium;
     font-size: 16px;
     line-height: 30px;
     padding-top: 20.1px;
-    padding-bottom: rem(62);
+    padding-bottom: rem(151.2);
     margin:auto;
     &__text {
       color: $orange;
@@ -145,9 +150,13 @@
     }
 
     &-offerta {
+      &__checkbox {
+        width: auto;
+      }
       &__content {
         font-size: 13px;
         line-height: 15.6px;
+        max-width: 305px;
       }
     }
 

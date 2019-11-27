@@ -1,0 +1,34 @@
+
+input.checkbox-custom {
+  display: none;
+}
+label.checkbox-custom-label {
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #000;
+  margin: 5px;
+  cursor: pointer;
+}
+.checkbox-text {
+  padding-left: 12.3px;
+}
+.checkbox-mark {
+  opacity: 0;
+  position: absolute;
+  top: -8px;
+  width: 23px;
+  height: 22px;
+}
+input.checkbox-custom:checked + label.checkbox-custom-label {
+  .checkbox-mark {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .checkbox-text {
+    padding-left: 8.3px;
+  }
+}

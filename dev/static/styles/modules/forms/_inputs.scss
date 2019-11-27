@@ -1,0 +1,46 @@
+.test {
+  background-color: brown;
+}
+.form {
+  &__title {
+    padding-left: 22px;
+    @extend .selectors-price__title;
+    padding-bottom: 12.3px;
+  }
+  &__input {
+    height: 48px;
+    border: 1px solid #D5D5D5;
+    border-radius: 24px;
+    @include montserrat-medium;
+    font-size: 18px;
+    line-height: 21.6px;
+    padding-left: 22px;
+    &--danger {
+      border-color: $alert;
+    }
+    &--success {
+      border-color: $success;
+    }
+  }
+  &__alert {
+    @include montserrat-medium;
+    font-size: 18px;
+    line-height: 21.6px;
+    
+    text-align: center;
+    &--danger {
+      color: $alert;
+    }
+    &--success {
+      color: $success;
+    }
+  }
+}
+@media screen and (max-width: 680px) {
+  .form {
+    &__alert {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}

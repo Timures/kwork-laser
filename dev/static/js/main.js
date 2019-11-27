@@ -29,10 +29,11 @@ $(document).ready(function () {
             break;
         }
     });
-    // -- brightness
-    // - ширина прогресса 270 равняется 100%. 145 = 50%. 72 = 25%. 
+
+    // -- brightness // - ширина прогресса 270px равняется 100%. 145 = 50%. 72 = 25%. 
     $('.brightness-progress__value').css('width', 210);
-    // --- выбор рамки тут можно выводить цену
+
+    // --- выбор рамки, тут сразу можно будет выводить цену указав ее в value input
     $('input[type=radio][name=frame__input]').on('change', function() {
         // console.log('test');
         var ramki_value = $(this).val();
