@@ -1,0 +1,17 @@
+extends template/main
+
+block variables
+  - var title = 'Options'
+
+block content
+  section.options
+    .options__title Оформление заказа
+    .options__desc Выберите размер картины и нужную область
+    .options__content
+      form.options-form
+      include modules/selector/selector-noalert
+      .options-form__image
+        img(class='options__image' src='static/images/general/image.png')
+
+    .options__btn Сохранить и продолжить
+    

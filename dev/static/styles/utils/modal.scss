@@ -1,0 +1,56 @@
+#filter {
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left:0;
+  z-index: 100;
+  display: none;
+}
+#modalForm{
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left:0;
+  z-index: 150;
+  display: none;
+  width: rem(1000);
+  height: rem(500);
+  margin:rem(218) auto 0 auto;
+}
+.modal {
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #D0C8C2;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: rem(104);   
+    background-color: #63615f;
+    &__title {
+      @include montserrat-regular;
+      color: #fff;
+      font-size: 21px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #modalForm{
+    width: 90%;
+    height: rem(350);
+    margin:rem(240) auto 0 auto;
+  }
+  .modal {
+    &-content {
+      margin: 0 auto;
+    }
+  }
+
+}
+

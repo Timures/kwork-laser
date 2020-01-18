@@ -1,0 +1,62 @@
+extends template/main
+
+block variables
+  - var title = 'delivery Выбор рамки'
+
+block content
+  section.delivery
+    .delivery-head
+      .delivery__title Оформление заказа
+      .delivery__desc Заполните информацию о доставке
+    .delivery-content
+      +breadcrumbs('К редактированию', '/')
+      .delivery-content__title Ваш заказ
+      .delivery-content__img
+        img(class='delivery__img' src='static/images/general/painting.png')
+      .delivery-info
+        .delivery-info__format
+          .delivery-info__name Формат:
+          .delivery-info__size Альбомная A4
+
+        .delivery-info__format
+          .delivery-info__name Рамка №:
+          .delivery-info__frame 6
+
+        .delivery-info__amount
+          .delivery-info__down
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g transform="translate(-10694 -974)"><rect width="12" height="2" transform="translate(10703 988)" fill="#f06f05"/><g transform="translate(10694 974)" fill="none" stroke="#f06f05" stroke-width="1"><circle cx="15" cy="15" r="15" stroke="none"/><circle cx="15" cy="15" r="14.5" fill="none"/></g></g></svg>
+          .delivery-info__volume 1
+          .delivery-info__up
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g transform="translate(-10759 -974)"><path d="M10773,995v-5h-5v-2h5v-5h2v5h5v2h-5v5Z" fill="#f06f05"/><g transform="translate(10759 974)" fill="none" stroke="#f06f05" stroke-width="1"><circle cx="15" cy="15" r="15" stroke="none"/><circle cx="15" cy="15" r="14.5" fill="none"/></g></g></svg>
+      
+      .delivery-customer-data
+        include modules/form/form-fill
+
+      .delivery-calculation
+        .delivery-calculation__picture
+          .delivery-calculation__name Картина
+          .delivery-calculation__summ--picture 1800 р.
+
+        .delivery-calculation__frame
+          .delivery-calculation__name Рамка
+          .delivery-calculation__summ--frame 1000 р.
+        
+        .delivery-calculation__delivery
+          .delivery-calculation__name Доставка
+          .delivery-calculation__summ--delivery 650 р.
+
+        .delivery-calculation__all
+          .delivery-calculation__name Итого:
+          .delivery-calculation__summ--all 3450 р.
+
+  .delivery-offerta
+    input(id='checkbox-1', class='checkbox-custom offerta__checkbox', name='checkbox-1', type='checkbox',checked)
+    label(for='checkbox-1', class='checkbox-custom-label')
+      .checkbox-mark
+        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22"><g transform="translate(-12315.999 -1663)" fill="#0f0f0f"><path d="M 12325.8642578125 1684.13330078125 C 12323.04296875 1680.8388671875 12319.7578125 1678.126342773438 12317.1123046875 1676.884155273438 L 12322.234375 1673.837646484375 L 12325.107421875 1679.301879882813 L 12325.599609375 1680.239013671875 L 12326.0107421875 1679.263061523438 C 12326.0234375 1679.233276367188 12327.29296875 1676.237182617188 12329.5126953125 1672.797119140625 C 12331.4072265625 1669.860229492188 12334.3759765625 1666.0283203125 12338.029296875 1663.884521484375 C 12337.9970703125 1664.1943359375 12337.9619140625 1664.500732421875 12337.9267578125 1664.802001953125 C 12337.6865234375 1666.863647460938 12337.4580078125 1668.818725585938 12338.3271484375 1671.100341796875 C 12334.642578125 1672.507202148438 12328.400390625 1679.930541992188 12325.8642578125 1684.13330078125 Z" stroke="none"/><path d="M 12337.416015625 1664.864379882813 C 12334.24609375 1667.01953125 12331.65234375 1670.405639648438 12329.9423828125 1673.053466796875 C 12327.7431640625 1676.45849609375 12326.484375 1679.427612304688 12326.4716796875 1679.456909179688 L 12325.650390625 1681.409545898438 L 12324.6650390625 1679.534545898438 L 12322.037109375 1674.536865234375 L 12318.14453125 1676.852294921875 C 12320.544921875 1678.177612304688 12323.32421875 1680.508544921875 12325.7958984375 1683.29443359375 C 12327.146484375 1681.175659179688 12329.1904296875 1678.543701171875 12331.2919921875 1676.242553710938 C 12333.130859375 1674.22998046875 12335.609375 1671.8154296875 12337.701171875 1670.825317382813 C 12336.9951171875 1668.656616210938 12337.19921875 1666.7314453125 12337.416015625 1664.864379882813 M 12338.609375 1662.999755859375 C 12338.4140625 1665.869262695313 12337.634765625 1668.356201171875 12338.9990234375 1671.416870117188 C 12335.490234375 1672.182250976563 12328.2783203125 1680.790893554688 12325.939453125 1684.99951171875 C 12322.6259765625 1680.982055664063 12318.728515625 1677.921264648438 12315.9990234375 1676.96484375 L 12322.431640625 1673.138549804688 L 12325.5498046875 1679.069213867188 C 12325.5498046875 1679.069213867188 12330.6181640625 1667.017211914063 12338.609375 1662.999755859375 Z" stroke="none"/></g></svg>
+    .delivery-offerta__content.checkbox-text
+      span.delivery-offerta__text Я прочитал
+      a(class='delivery-offerta__link', href='/')  пользовательское соглашение
+      span.delivery-offerta__text  и согласен с условиями безопасности и обработки персональных данных.
+
+  .delivery__btn.btn Оплатить

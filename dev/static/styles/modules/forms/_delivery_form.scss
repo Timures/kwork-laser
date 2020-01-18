@@ -1,19 +1,27 @@
 .form-row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 21px;
 }
 
 .delivery-form {
   margin-bottom: rem(18.9);
   &__input {
-    &--name {
-      width: 244px;
+    &--name,&--index {
+      max-width: 244px;
+      width: 100%;
     }
     &--phone {
-      width: 214px;
+      max-width: 244px;
+      width: 100%;
     }
     &--email {
-      width: 274px;
+      max-width: 274px;
+      width: 100%;
+    }
+    &--adress {
+      width: 100%;
     }
     &--promocod {
       width: 244px;
@@ -33,8 +41,11 @@
   &-contacts {
     margin-top: rem(23.7);
   }
-  &-phone {    
+  &-name {    
     margin-right: 20px;
+  }
+  &-adress {
+    width: 100%;
   }
   &-extra {
     margin-top: rem(31.7);

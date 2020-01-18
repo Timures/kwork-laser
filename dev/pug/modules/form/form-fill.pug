@@ -1,0 +1,51 @@
+form.delivery-form
+
+  
+  .customer-contacts
+    .form-row
+      .customer-name
+        .form__title Имя
+        .form__inputs
+          input(class='form__input delivery-form__input--name' type='text' name='delivery-form__name' value="Константин")
+    
+      .customer-patronymic
+        .form__title Отчество
+        .form__inputs
+          input(class='form__input delivery-form__input--patronymic' type='text' name='delivery-form__patronymic' value="Константинович")
+
+    .form-row
+      .customer-phone
+        .form__title Номер телефона
+        .form__inputs
+          input(class='form__input delivery-form__input--phone' type='phone' name='delivery-form__phone' value="18309897563")
+    
+      .customer-email
+        .form__title Эл. почта
+        .form__inputs
+          input(class='form__input delivery-form__input--email' type='email' name='delivery-form__email' value="gouerilla622@mail.ru")
+    .form-row
+      .customer-adress
+        .form__title Полный адрес доставки
+        .form__inputs
+          input(class='form__input delivery-form__input--adress' type='text' name='delivery-form__adress' value="634057, Томск, ул.Д.Ключевчская, 32/1, кв. 221")
+    .form-row
+      .customer-index
+        .form__title Индекс
+        .form__inputs
+          input(class='form__input delivery-form__input--index' type='text' name='delivery-form__index' value="634057")
+
+
+  //- .customer-extra
+  //-   .form-row
+  //-     .customer-promocod
+  //-       .form__title Промокод (при наличии)
+  //-       .form-row
+  //-         .form__inputs
+  //-           input(class='form__input form__input--danger delivery-form__input--promocod' type='email' name='delivery-form__adress')
+          //- .form__alert.form__alert--danger
+          //-   span.delivery-form__alert Промокод введён неверно
+  .customer-comment
+    .form__title Примечания
+    .form__inputs
+      textarea(class='form__input delivery-form__input--comment' name='customer-comment' row='10' cols='45')
+
