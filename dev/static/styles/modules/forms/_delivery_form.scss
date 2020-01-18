@@ -8,26 +8,21 @@
 .delivery-form {
   margin-bottom: rem(18.9);
   &__input {
-    &--name,&--index {
-      max-width: 244px;
-      width: 100%;
+    &--name {
+      width: 244px;
     }
     &--phone {
-      max-width: 244px;
-      width: 100%;
+      width: 244px;
     }
     &--email {
-      max-width: 274px;
-      width: 100%;
+      width: 274px;
     }
-    &--adress {
-      width: 100%;
-    }
+    
     &--promocod {
       width: 244px;
     }
     &--comment {
-      width: 508px;
+      width: 100%;// 508px;
       height: 125px;
       padding-top: 22px;
     }
@@ -41,12 +36,10 @@
   &-contacts {
     margin-top: rem(23.7);
   }
-  &-name {    
+  &-phone {    
     margin-right: 20px;
   }
-  &-adress {
-    width: 100%;
-  }
+  
   &-extra {
     margin-top: rem(31.7);
   }

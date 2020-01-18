@@ -104,7 +104,10 @@
 
   &__btn {
     @extend .btn;
-    margin: auto;
+    margin: 0 auto rem(72) auto;
+    &.btn--disabled{
+      margin: auto;
+    }    
   }
 
   &-instruction {
