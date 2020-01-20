@@ -171,6 +171,10 @@
     &-alert {
       width: 323px;
       height: 121px;
+      margin: 0 auto;
+      &-content{
+        width: auto;
+      }
       &.no-alert {
         height: 41px;
       }

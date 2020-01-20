@@ -131,7 +131,7 @@
       padding-left: 20px;
       padding-right: 20px;
       &__img {
-        width: 295px;
+        width: 280px; // 295px
         height: 215px;
       }      
     }
@@ -153,6 +153,7 @@
     }
 
     &-offerta {
+      padding: 0 20px;
       &__checkbox {
         width: auto;
       }
